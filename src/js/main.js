@@ -1,12 +1,12 @@
 var game = (function () {
-    var canvas = document.getElementById('canvas');
+  var canvas = document.getElementById('canvas');
   var ctx = canvas.getContext('2d');
 
   var player = {
     x: 0,
     y: 475,
-    h: 25,
-    w: 25,
+    h: 70,
+    w: 70,
     fill: '#7b68ee',
     dir: 'right',
     speed: 5
@@ -15,8 +15,8 @@ var game = (function () {
   var spawn = {
     x: 50,
     y: 0,
-    h: 10,
-    w: 10,
+    h: 30,
+    w: 30,
     fill: '#008080',
     speed: 5
   }
@@ -32,6 +32,8 @@ var game = (function () {
   var score = 0;
 
   var playerImage = document.getElementById('playerSource');
+
+  var spawnImage = document.getElementById('spawnSource');
 
 
   function launchSpawns() {
@@ -76,12 +78,20 @@ var game = (function () {
             spawns[spawn].h + 2
           );
 
-          ctx.fillRect(
+          ctx.drawImage(
+            spawnImage,
             spawns[spawn].x,
             spawns[spawn].y = (spawns[spawn].y + spawns[spawn].speed),
             spawns[spawn].w,
             spawns[spawn].h
           );
+
+          // ctx.fillRect(
+          //   spawns[spawn].x,
+          //   spawns[spawn].y = (spawns[spawn].y + spawns[spawn].speed),
+          //   spawns[spawn].w,
+          //   spawns[spawn].h
+          // );
 
           ctx.restore();
 
@@ -151,7 +161,7 @@ var game = (function () {
         player.y,
         player.w,
         player.h
-    );
+      );
 
       // ctx.fillRect(
       //   player.x = (player.x - player.speed),

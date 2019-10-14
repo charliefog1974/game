@@ -9,7 +9,12 @@ canvas {
   z-index: 100;
   font-weight: bold;
   font-size: 20px;
-  color: #ec0808; }
+  color: #26bb08; }
+
+h1 {
+  position: absolute;
+  float: left;
+  color: #0ab171; }
 
 .sources {
   display: none; }
