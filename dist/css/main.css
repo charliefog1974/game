@@ -9,4 +9,7 @@ canvas {
   z-index: 100;
   font-weight: bold;
   font-size: 20px;
-  color: #d5d807; }
+  color: #ec0808; }
+
+.sources {
+  display: none; }

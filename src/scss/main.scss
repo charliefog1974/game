@@ -1,14 +1,18 @@
 canvas {
-    background: rgb(0, 0, 0);
-  }
-  
-  /* 4. Over lay the score on the top left corner of the canvas.*/
-  #score {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(213, 216, 7);
-  }
+  background: rgb(0, 0, 0);
+}
+
+/* 4. Over lay the score on the top left corner of the canvas.*/
+#score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(236, 8, 8);
+}
+
+.sources {
+  display: none;
+}
