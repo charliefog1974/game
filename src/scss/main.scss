@@ -1,5 +1,5 @@
 canvas {
-    background: #000;
+    background: rgb(0, 0, 0);
   }
   
   /* 4. Over lay the score on the top left corner of the canvas.*/
@@ -10,5 +10,5 @@ canvas {
     z-index: 100;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(243, 13, 13);
+    color: rgb(213, 216, 7);
   }

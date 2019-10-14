@@ -95,7 +95,7 @@ var game = (function(){
             }
   
           }else{
-            score = score + 10;
+            score = score + 100;
             document.getElementById('score').innerHTML = score;
             delete spawns[spawn];
           }

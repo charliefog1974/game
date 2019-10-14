@@ -1,5 +1,5 @@
 canvas {
-  background: #000; }
+  background: black; }
 
 /* 4. Over lay the score on the top left corner of the canvas.*/
 #score {
@@ -9,4 +9,4 @@ canvas {
   z-index: 100;
   font-weight: bold;
   font-size: 20px;
-  color: #f30d0d; }
+  color: #d5d807; }
